@@ -1,0 +1,169 @@
+/*common*/
+html {
+  font-family: 'Cinzel','Open Sans','Helvetica Neue',serif;
+  font-size: 20px;
+  color: #000;
+}
+
+body{
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/*header*/
+#header{
+  width: 100vw;
+  color: #fff;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+}
+
+#header h1{
+  margin: 20px 30px;
+}
+
+#header ul{
+  list-style: none;
+  display: flex;
+  text-align: center;
+}
+
+#header ul li{
+padding-left: 50px;
+}
+
+#header ul li:hover{
+  color: #ff0;
+}
+
+/*main*/
+.sub-title{
+  display: inline-block;
+  font-size: 45px;
+  padding: 0 20px;
+  margin-left: 40px;
+  border-bottom: 2px solid #000;
+}
+
+
+/*top*/
+.top img{
+  width: 100vw;
+}
+
+/*about*/
+#about{
+  margin-bottom: 50px;
+}
+#about .contents{
+  display: flex;
+}
+
+#about img{
+  width: 554px;
+  height: 378px;
+  margin-left: 10%;
+  margin-right: 40px;
+}
+
+#about .content{
+  padding:  0 60px 0 40px;
+  background-color: #E6E6E6;
+}
+
+#about h3{
+  font-size: 30px;
+}
+
+#about p{
+  font-size: 25px;
+}
+
+/*reviews*/
+#reviews .review{
+  margin: 0 20% 0 8%;
+}
+
+
+#reviews .comment{
+  display: flex;
+  margin: 20px 0;
+}
+
+.comment p{
+  width: 700px;
+  height: 150px;
+  margin-left: 20px;
+  padding: 10px;
+  border: 1px solid #000;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+/*derivation*/
+#derivation{
+  margin-bottom: 50px;
+}
+
+#derivation h3{
+  font-size: 30px;
+  margin-left: 20px;
+  padding-left: 5px;
+  border-left: 8px solid #f00;
+}
+
+#derivation .product{
+  display: flex;
+  align-items: center;
+  margin: 0 7%;
+  border: 1px solid #000;
+}
+
+.product img{
+  width: 500px;
+  height: 300px;
+}
+
+.product p{
+  margin-left: 5%;
+  width: 600px;
+}
+
+/*footer*/
+#footer {
+  width: 100vw;
+  height: 150px;
+  background-color: #000;
+  color: #fff;
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-nav ul {
+  padding: 0;
+  display: flex;
+  list-style: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer-nav ul li {
+  font-size: 25px;
+  padding:0 20px;
+}
+
+.footer-nav ul li:hover {
+  color: #ff0;
+}
+
+#footer p{
+  text-align:center;
+}
