@@ -2,14 +2,15 @@
 <html lang="ja" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <script type="text/javascript" src="./scripts/script.js"></script>
     <link rel="stylesheet" href="./styles/stylesheet.css">
-    <link rel="stylesheet" href="/styles/animate.css">
+    <link rel="stylesheet" href="./styles/animate.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script type="text/javascript" src="./scripts/script.js"></script>
     <title>ブラックサンダー紹介サイト</title>
   </head>
   <body>
     <header id="header">
-      <h1>ブラックサンダー</h1>
+      <h1 id="top-btn" class="animated fadeInRight">ブラックサンダー</h1>
       <nav class="header-nav">
         <ul>
           <a href="#about"><li>商品概要</li></a>
@@ -20,7 +21,8 @@
     </header>
     <main>
       <div class="top">
-        <img src="./img/mainv.jpg" alt="" >
+        <p></p>
+        <img src="./img/mainv.jpg" alt="" class="animated flipInX">
       </div>
       <div id="about">
         <h2 class="sub-title">商品概要</h2>
@@ -34,11 +36,35 @@
           </div>
           <div class="content">
             <h3>栄養成分</h3>
-            <p>詳しく見る</p>
-            <!-- <p>（1本(標準21g)当たり）エネルギー　112kcalたんぱく質　1.3g脂質　6.0g炭水化物　13.1g食塩相当量	　0.2g</p> -->
+            <div class="dialog" id="dialog1">
+              <div class="dialog-header">
+                <span class="dialog-title">栄養成分</span>
+                <button type="button" class="dialog-close">閉じる☓</button>
+              </div>
+              <div class="dialog-content">
+                <p>（1本(標準21g)当たり）<br>
+                  エネルギー 112kcal<br>
+                  たんぱく質 1.3g <br>
+                  脂質 6.0g<br>
+                  炭水化物 13.1g<br>
+                  食塩相当量 0.2g</p>
+              </div>
+            </div>
+            <button id="open-dialog1">詳しく見る</button>
             <h3>原材料名</h3>
-            <p>詳しく見る</p>
-            <!-- <p>準チョコレート（砂糖、植物油脂（大豆を含む）、全粉乳、脱脂粉乳、ココアパウダー、カカオマス、乳糖、食塩）、ココアクッキー、油脂加工食品（砂糖、植物油脂、脱脂粉乳、乳糖）、小麦粉、砂糖、植物油脂、ショートニング、食塩、ホエイパウダー、脱脂粉乳、全粉乳／甘味料（ソルビトール）、膨脹剤、乳化剤、香料</p> -->
+            <div class="dialog" id="dialog2">
+              <div class="dialog-header">
+                <span class="dialog-title">原材料名</span>
+                <button type="button" class="dialog-close">閉じる☓</button>
+              </div>
+              <div class="dialog-content">
+                <p>準チョコレート（砂糖、植物油脂（大豆を含む）、全粉乳、脱脂粉乳、ココアパウダー、カカオマス、乳糖、食塩）<br>
+                  ココアクッキー、油脂加工食品（砂糖、植物油脂、脱脂粉乳、乳糖）<br>
+                  小麦粉、砂糖、植物油脂、ショートニング、食塩、ホエイパウダー<br>
+                  脱脂粉乳、全粉乳／甘味料（ソルビトール）、膨脹剤、乳化剤、香料</p>
+              </div>
+            </div>
+            <button id="open-dialog2">詳しく見る</button>
           </div>
         </div>
       </div>
@@ -66,35 +92,50 @@
       <div id="derivation">
         <h2 class="sub-title">派生商品</h2>
           <div class="products">
-            <h3>ビックサンダー</h3>
-            <div class="product">
-              <img src="./img/img2.jpg" alt="">
-              <p>大型のココアビスケットをチョコレートでコーティングしました。ワッフルのような格子状の模様が特徴的な形をしており、ココアクッキーの苦味とチョコレートの甘さが非常にマッチした商品です。
-                しっかりとした食感のココアビスケットを使用しております。
-                ボリュームたっぷりの1枚です。
-              </p>
+            <div class="title-product">
+              <h3>ビックサンダー</h3>
+              <div class="product">
+                <img src="./img/img2.jpg" alt="">
+                <div class="explotion">
+                  <p>大型のココアビスケットをチョコレートでコーティングしました。ワッフルのような格子状の模様が特徴的な形をしており、ココアクッキーの苦味とチョコレートの甘さが非常にマッチした商品です。
+                    しっかりとした食感のココアビスケットを使用しております。
+                    ボリュームたっぷりの1枚です。
+                  </p>
+                </div>
+              </div>
             </div>
-            <h3>ブラックサンダー ミニバー</h3>
-            <div class="product">
-              <img src="./img/img3.jpg" alt="">
-              <p>ココアビスケットとプレーンビスケットを練りこんだビスケット生地にチョコレートをコーティングしたお菓子です。ココアのほろ苦さとチョコレートの甘さがマッチしたお菓子で老若男女楽しめます。また一つ一つが食べやすいサイズのため、様々なシチュエーションでシェアできる商品となっています。
-                ココアビスケットとプレーンビスケットを練りこみチョコレートでコーティングしたお菓子です。食べやすいサイズで家族や同僚とシェアできる商品です。
-                ブラックサンダーのシェアパック商品です。
-              </p>
+            <div class="title-product">
+              <h3>ブラックサンダー ミニバー</h3>
+              <div class="product">
+                <img src="./img/img3.jpg" alt="">
+                <div class="explotion">
+                  <p>ココアビスケットとプレーンビスケットを練りこんだビスケット生地にチョコレートをコーティングしたお菓子です。ココアのほろ苦さとチョコレートの甘さがマッチしたお菓子で老若男女楽しめます。また一つ一つが食べやすいサイズのため、様々なシチュエーションでシェアできる商品となっています。
+                    ココアビスケットとプレーンビスケットを練りこみチョコレートでコーティングしたお菓子です。食べやすいサイズで家族や同僚とシェアできる商品です。
+                    ブラックサンダーのシェアパック商品です。
+                  </p>
+                </div>
+              </div>
             </div>
-            <h3>ブラックサンダー ラムレーズン</h3>
-            <div class="product">
-              <img src="./img/img4.jpg" alt="">
-              <p>チョコレートにラム酒パウダーを配合し、小粒のレーズンをそのまま配合することで、ひと口サイズの「プリティスタイル」シリーズでも、芳醇な風味と具材感をしっかりと楽しめます。</p>
+            <div class="title-product">
+              <h3>ブラックサンダー ラムレーズン</h3>
+              <div class="product">
+                <img src="./img/img4.jpg" alt="">
+                <div class="explotion">
+                  <p>チョコレートにラム酒パウダーを配合し、小粒のレーズンをそのまま配合することで、ひと口サイズの「プリティスタイル」シリーズでも、芳醇な風味と具材感をしっかりと楽しめます。</p>
+                </div>
+              </div>
             </div>
-            <h3>白いブラックサンダー</h3>
-            <div class="product">
-              <img src="./img/img5.jpg" alt="">
-              <p>ココアクッキーをホワイトチョコレートでコーティングしました。
-                解けたチョコレートは白く固まることがありますがお召し上がりいただけます。
-                ホワイトチョコに黒い粒がついておりますがココアクッキーです。
-              </p>
-            </div>
+            <div class="title-product">
+              <h3>白いブラックサンダー</h3>
+              <div class="product">
+                <img src="./img/img5.jpg" alt="">
+                <div class="explotion">
+                  <p>ココアクッキーをホワイトチョコレートでコーティングしました。
+                    解けたチョコレートは白く固まることがありますがお召し上がりいただけます。
+                    ホワイトチョコに黒い粒がついておりますがココアクッキーです。
+                  </p>
+                </div>
+              </div>
           </div>
       </div>
     </main>
