@@ -23,7 +23,7 @@ export default function App() {
     },
     {
       name: "Threads",
-      url: "https://threads.net",
+      url: "https://www.threads.net/@tnkrk.121",
       icon: <AtSign className="size-5" />,
       color: "hover:bg-black",
     },
