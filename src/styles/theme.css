@@ -127,22 +127,42 @@
   html {
     margin: 0;
     padding: 0;
+    /* フォールバック: 古いブラウザ用 */
     height: 100%;
+    /* Safari対応: 動的ビューポート高さ（アドレスバー伸縮に対応） */
+    height: 100dvh;
     overflow: hidden;
     font-size: var(--font-size);
+    /* 背景色統一: 白い余白が見えないようにする */
+    background: linear-gradient(to bottom right, rgb(17, 24, 39), rgb(15, 23, 42), rgb(31, 41, 55));
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply text-foreground;
     margin: 0;
     padding: 0;
+    /* フォールバック */
     height: 100%;
+    /* Safari対応 */
+    height: 100dvh;
     overflow: hidden;
+    /* Safe Area対応: ノッチ・ホームバー領域の余白確保 */
+    padding-top: env(safe-area-inset-top);
+    padding-bottom: env(safe-area-inset-bottom);
+    padding-left: env(safe-area-inset-left);
+    padding-right: env(safe-area-inset-right);
+    /* 背景色統一 */
+    background: linear-gradient(to bottom right, rgb(17, 24, 39), rgb(15, 23, 42), rgb(31, 41, 55));
   }
 
   #root {
+    /* フォールバック */
     height: 100%;
+    /* Safari対応 */
+    min-height: 100dvh;
     overflow: auto;
+    /* 背景色統一 */
+    background: linear-gradient(to bottom right, rgb(17, 24, 39), rgb(15, 23, 42), rgb(31, 41, 55));
   }
 
   /**
