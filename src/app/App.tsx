@@ -17,7 +17,7 @@ export default function App() {
     },
     {
       name: "Instagram",
-      url: "https://instagram.com",
+      url: "https://www.instagram.com/tnkrk.121",
       icon: <Instagram className="size-5" />,
       color: "hover:bg-gradient-to-br hover:from-[#833AB4] hover:via-[#FD1D1D] hover:to-[#FCAF45]",
     },
