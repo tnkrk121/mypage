@@ -66,7 +66,7 @@ export default function App() {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-slate-900 to-gray-800 flex items-center justify-center p-4">
+    <div className="h-screen overflow-auto bg-gradient-to-br from-gray-900 via-slate-900 to-gray-800 flex items-center justify-center p-4">
       <div className="w-full max-w-sm">
         <div className="bg-gray-800/80 backdrop-blur-sm rounded-3xl shadow-2xl p-6 space-y-6 border border-gray-700/50">
           {/* Profile Image */}
