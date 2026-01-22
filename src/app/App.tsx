@@ -13,55 +13,55 @@ export default function App() {
     {
       name: "X",
       url: "https://x.com/tnkrk121",
-      icon: <Twitter className="size-5" />,
+      icon: <Twitter className="size-6" />,
       color: "hover:bg-black",
     },
     {
       name: "Instagram",
       url: "https://www.instagram.com/tnkrk.121",
-      icon: <Instagram className="size-5" />,
+      icon: <Instagram className="size-6" />,
       color: "hover:bg-gradient-to-br hover:from-[#833AB4] hover:via-[#FD1D1D] hover:to-[#FCAF45]",
     },
     {
-      name: "Threads",
-      url: "https://www.threads.net/@tnkrk.121",
-      icon: <AtSign className="size-5" />,
-      color: "hover:bg-black",
+      name: "Filmarks",
+      url: "https://filmarks.com/users/tnkrk121",
+      icon: <Film className="size-6" />,
+      color: "hover:bg-[#FF6B6B]",
     },
     {
       name: "Apple Music",
       url: "https://music.apple.com/profile/tnkrk121",
-      icon: <Music className="size-5" />,
+      icon: <Music className="size-6" />,
       color: "hover:bg-[#FA243C]",
     },
     {
       name: "食べログ",
       url: "https://tabelog.com/rvwr/tnkrk121",
-      icon: <UtensilsCrossed className="size-5" />,
+      icon: <UtensilsCrossed className="size-6" />,
       color: "hover:bg-[#D2691E]",
     },
     {
-      name: "booklog",
+      name: "ブクログ",
       url: "https://booklog.jp/users/tnkrk121",
-      icon: <BookOpen className="size-5" />,
+      icon: <BookOpen className="size-6" />,
       color: "hover:bg-[#6B4423]",
     },
     {
-      name: "Filmarks",
-      url: "https://filmarks.com/users/tnkrk121",
-      icon: <Film className="size-5" />,
-      color: "hover:bg-[#FF6B6B]",
+      name: "Threads",
+      url: "https://www.threads.net/@tnkrk.121",
+      icon: <AtSign className="size-6" />,
+      color: "hover:bg-black",
     },
     // {
     //   name: "GitHub",
     //   url: "https://github.com",
-    //   icon: <Github className="size-5" />,
+    //   icon: <Github className="size-6" />,
     //   color: "hover:bg-[#333]",
     // },
     // {
     //   name: "Email",
     //   url: "mailto:your.email@example.com",
-    //   icon: <Mail className="size-5" />,
+    //   icon: <Mail className="size-6" />,
     //   color: "hover:bg-[#EA4335]",
     // },
   ];
@@ -83,8 +83,8 @@ export default function App() {
 
           {/* Profile Info */}
           <div className="text-center space-y-2">
-            <h1 className="text-2xl text-white">tnkrk121</h1>
-            <p className="text-gray-300 text-sm">
+            <h1 className="text-3xl text-white">tnkrk121</h1>
+            <p className="text-gray-300 text-base">
               備忘録
             </p>
           </div>
@@ -111,14 +111,14 @@ export default function App() {
                 <span className="transition-transform group-hover:scale-110">
                   {link.icon}
                 </span>
-                <span className="text-sm">{link.name}</span>
+                <span className="text-base">{link.name}</span>
               </a>
             ))}
           </div>
 
           {/* Footer */}
           <div className="text-center pt-2">
-            <p className="text-xs text-gray-500">
+            <p className="text-sm text-gray-500">
               © 2026 All rights reserved
             </p>
           </div>

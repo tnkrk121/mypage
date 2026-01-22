@@ -130,7 +130,9 @@
     /* フォールバック: 古いブラウザ用 */
     height: 100%;
     /* Safari対応: 動的ビューポート高さ（アドレスバー伸縮に対応） */
-    height: 100dvh;
+    min-height: 100vh;
+    min-height: 100svh;
+    min-height: 100dvh;
     overflow: hidden;
     font-size: var(--font-size);
     /* 背景色統一: 白い余白が見えないようにする */
@@ -144,7 +146,9 @@
     /* フォールバック */
     height: 100%;
     /* Safari対応 */
-    height: 100dvh;
+    min-height: 100vh;
+    min-height: 100svh;
+    min-height: 100dvh;
     overflow: hidden;
     /* Safe Area対応: ノッチ・ホームバー領域の余白確保 */
     padding-top: env(safe-area-inset-top);
@@ -159,6 +163,9 @@
     /* フォールバック */
     height: 100%;
     /* Safari対応 */
+    min-height: 100%;
+    min-height: 100vh;
+    min-height: 100svh;
     min-height: 100dvh;
     overflow: auto;
     /* 背景色統一 */
