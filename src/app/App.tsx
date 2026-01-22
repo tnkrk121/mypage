@@ -11,7 +11,7 @@ export default function App() {
   const socialLinks: SocialLink[] = [
     {
       name: "X",
-      url: "https://x.com",
+      url: "https://x.com/tnkrk121",
       icon: <Twitter className="size-5" />,
       color: "hover:bg-black",
     },
@@ -29,40 +29,40 @@ export default function App() {
     },
     {
       name: "Apple Music",
-      url: "https://music.apple.com",
+      url: "https://music.apple.com/profile/tnkrk121",
       icon: <Music className="size-5" />,
       color: "hover:bg-[#FA243C]",
     },
     {
       name: "食べログ",
-      url: "https://tabelog.com",
+      url: "https://tabelog.com/rvwr/tnkrk121",
       icon: <UtensilsCrossed className="size-5" />,
       color: "hover:bg-[#D2691E]",
     },
     {
       name: "booklog",
-      url: "https://booklog.jp",
+      url: "https://booklog.jp/users/tnkrk121",
       icon: <BookOpen className="size-5" />,
       color: "hover:bg-[#6B4423]",
     },
     {
       name: "Filmarks",
-      url: "https://filmarks.com",
+      url: "https://filmarks.com/users/tnkrk121",
       icon: <Film className="size-5" />,
       color: "hover:bg-[#FF6B6B]",
     },
-    {
-      name: "GitHub",
-      url: "https://github.com",
-      icon: <Github className="size-5" />,
-      color: "hover:bg-[#333]",
-    },
-    {
-      name: "Email",
-      url: "mailto:your.email@example.com",
-      icon: <Mail className="size-5" />,
-      color: "hover:bg-[#EA4335]",
-    },
+    // {
+    //   name: "GitHub",
+    //   url: "https://github.com",
+    //   icon: <Github className="size-5" />,
+    //   color: "hover:bg-[#333]",
+    // },
+    // {
+    //   name: "Email",
+    //   url: "mailto:your.email@example.com",
+    //   icon: <Mail className="size-5" />,
+    //   color: "hover:bg-[#EA4335]",
+    // },
   ];
 
   return (
@@ -82,9 +82,9 @@ export default function App() {
 
           {/* Profile Info */}
           <div className="text-center space-y-2">
-            <h1 className="text-2xl text-white">あなたの名前</h1>
+            <h1 className="text-2xl text-white">tnkrk121</h1>
             <p className="text-gray-300 text-sm">
-              自己紹介文がここに入ります。趣味や仕事、好きなことなどを簡単に書いてみましょう。
+              備忘録
             </p>
           </div>
 
