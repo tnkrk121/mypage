@@ -1,4 +1,5 @@
 import { Twitter, Instagram, UtensilsCrossed, Github, Mail, Music, BookOpen, AtSign, Film } from "lucide-react";
+import logo from "../logo.png";
 
 interface SocialLink {
   name: string;
@@ -73,7 +74,7 @@ export default function App() {
           <div className="flex justify-center">
             <div className="relative">
               <img
-                src="https://images.unsplash.com/photo-1613145997970-db84a7975fbb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9maWxlJTIwcG9ydHJhaXQlMjBwZXJzb258ZW58MXx8fHwxNzY5MDg5MDM5fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+                src={logo}
                 alt="プロフィール画像"
                 className="size-24 rounded-full object-cover border-4 border-gray-700 shadow-xl"
               />
