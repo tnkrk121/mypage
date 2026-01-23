@@ -129,8 +129,8 @@
     margin: 0;
     padding: 0;
     /* フォールバック: 古いブラウザ用 */
-    min-height: 100%;
-    overflow-y: auto;
+    height: 100%;
+    overflow: hidden;
     font-size: var(--font-size);
     /* 背景色統一: 白い余白が見えないようにする */
     background: var(--app-background);
@@ -141,8 +141,8 @@
     margin: 0;
     padding: 0;
     /* フォールバック */
-    min-height: 100%;
-    overflow-y: auto;
+    height: 100%;
+    overflow: hidden;
     overscroll-behavior-y: none;
     /* 背景色統一 */
     background: var(--app-background);
@@ -151,8 +151,8 @@
 
   #root {
     /* フォールバック */
-    min-height: 100%;
-    overflow: visible;
+    height: 100%;
+    overflow: hidden;
     /* 背景色統一 */
     background: var(--app-background);
     position: relative;
