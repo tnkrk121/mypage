@@ -131,6 +131,8 @@
     /* フォールバック: 古いブラウザ用 */
     height: 100%;
     min-height: 100%;
+    min-height: 100vh;
+    min-height: 100svh;
     min-height: 100dvh;
     min-height: -webkit-fill-available;
     overflow: hidden;
@@ -146,6 +148,8 @@
     /* フォールバック */
     height: 100%;
     min-height: 100%;
+    min-height: 100vh;
+    min-height: 100svh;
     min-height: 100dvh;
     min-height: -webkit-fill-available;
     overflow: hidden;
@@ -159,6 +163,8 @@
     /* フォールバック */
     height: 100%;
     min-height: 100%;
+    min-height: 100vh;
+    min-height: 100svh;
     min-height: 100dvh;
     min-height: -webkit-fill-available;
     overflow: hidden;
@@ -166,6 +172,14 @@
     background: var(--app-background);
     position: relative;
     z-index: 1;
+  }
+
+  @supports (-webkit-touch-callout: none) {
+    html,
+    body,
+    #root {
+      height: -webkit-fill-available;
+    }
   }
 
   /**
