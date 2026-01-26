@@ -73,7 +73,7 @@ export default function App() {
   ];
 
   return (
-    <div className="min-h-screen min-h-[100svh] min-h-[100dvh] bg-gradient-to-br from-gray-900 via-slate-900 to-gray-800">
+    <div className="h-[100dvh] bg-gradient-to-br from-gray-900 via-slate-900 to-gray-800">
       <div className="h-full overflow-hidden">
         <div className="h-full overflow-y-auto overscroll-contain px-4 pt-[env(safe-area-inset-top)] pb-[env(safe-area-inset-bottom)]">
           <div className="min-h-full flex items-center justify-center py-4">
