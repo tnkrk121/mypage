@@ -1,4 +1,4 @@
-import { Twitter, Instagram, UtensilsCrossed, Github, Mail, Music, BookOpen, AtSign, Film } from "lucide-react";
+import { Twitter, Instagram, UtensilsCrossed, Music, BookOpen, AtSign, Film, NotebookPen } from "lucide-react";
 import logo from "../logo.png";
 
 interface SocialLink {
@@ -45,6 +45,12 @@ export default function App() {
       url: "https://booklog.jp/users/tnkrk121",
       icon: <BookOpen className="size-6" />,
       color: "hover:bg-[#6B4423]",
+    },
+    {
+      name: "note",
+      url: "https://note.com/tnkrk121",
+      icon: <NotebookPen className="size-6" />,
+      color: "hover:bg-[#41C9B4]",
     },
     {
       name: "Threads",
