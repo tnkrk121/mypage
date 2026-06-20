@@ -1,4 +1,4 @@
-import { Twitter, Instagram, UtensilsCrossed, Music, BookOpen, AtSign, Film, NotebookPen } from "lucide-react";
+import { Twitter, Instagram, UtensilsCrossed, Music, BookOpen, AtSign, Film, NotebookPen, Award } from "lucide-react";
 import logo from "../logo.png";
 
 interface SocialLink {
@@ -57,6 +57,12 @@ export default function App() {
       url: "https://www.threads.net/@tnkrk.121",
       icon: <AtSign className="size-6" />,
       color: "hover:bg-black",
+    },
+    {
+      name: "Credly",
+      url: "https://credly.com/users/tnkrk121",
+      icon: <Award className="size-6" />,
+      color: "hover:bg-[#FF6B00]",
     },
     // {
     //   name: "GitHub",
