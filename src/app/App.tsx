@@ -10,6 +10,7 @@ import {
   Instagram,
   NotebookPen,
   UtensilsCrossed,
+  Youtube,
 } from "lucide-react";
 
 type LinkItem = {
@@ -59,6 +60,11 @@ const links: LinkItem[] = [
     name: "Credly",
     url: "https://credly.com/users/tnkrk121",
     icon: <BadgeCheck aria-hidden="true" />,
+  },
+  {
+    name: "YouTube",
+    url: "https://www.youtube.com/@tnkrk121",
+    icon: <Youtube aria-hidden="true" />,
   },
 ];
 
@@ -189,8 +195,8 @@ export default function App() {
             <div className="index-inner">
               <header className="index-header">
                 <h2 id="index-title">Index</h2>
-                <span className="index-count" aria-label="9 links">
-                  09
+                <span className="index-count" aria-label={`${links.length} links`}>
+                  {String(links.length).padStart(2, "0")}
                 </span>
               </header>
 
