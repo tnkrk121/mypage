@@ -5,8 +5,8 @@
 ## 技術スタック
 
 - **フレームワーク**: React 18 + Vite
-- **スタイリング**: TailwindCSS 4
-- **UIコンポーネント**: Radix UI
+- **スタイリング**: CSS（TailwindCSS 4のビルド設定を併用）
+- **アイコン**: Material Icons（MUI）
 
 ## セットアップ
 
@@ -28,8 +28,8 @@ src/
 ├── main.tsx          # エントリーポイント
 ├── app/
 │   ├── App.tsx       # メインアプリケーション
-│   └── components/
-│       └── ui/       # UIコンポーネント
+├── assets/
+│   └── network-background.webp # サイト専用に生成した背景
 └── styles/
     ├── index.css
     ├── tailwind.css
@@ -38,11 +38,9 @@ src/
 
 ## カスタマイズ
 
-`src/app/App.tsx` を編集して以下をカスタマイズできます：
+`src/app/App.tsx` の `profiles` 配列でサービス名・URL・アイコンを編集できます。件数は配列から表示し、リンクが増えると次の段へ並びます。
 
-- プロフィール画像
-- 名前・自己紹介文
-- ソーシャルリンク
+スマホでは2列・最小72px高のShelfを表示します。画面幅に応じて3・4・5列へ広がります。配色や余白は `src/styles/theme.css`、黒とシアンの背景画像は `src/assets/network-background.webp` で管理します。
 
 ## Cloudflare Pages へのデプロイ
 
