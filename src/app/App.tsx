@@ -8,6 +8,7 @@ import {
   Film,
   Headphones,
   Instagram,
+  MessageCircle,
   NotebookPen,
   UtensilsCrossed,
   Youtube,
@@ -57,14 +58,19 @@ const links: LinkItem[] = [
     icon: <AtSign aria-hidden="true" />,
   },
   {
-    name: "Credly",
-    url: "https://credly.com/users/tnkrk121",
-    icon: <BadgeCheck aria-hidden="true" />,
-  },
-  {
     name: "YouTube",
     url: "https://www.youtube.com/@tnkrk121",
     icon: <Youtube aria-hidden="true" />,
+  },
+  {
+    name: "ChatGPT",
+    url: "https://chatgpt.com/u/tnkrk121",
+    icon: <MessageCircle aria-hidden="true" />,
+  },
+  {
+    name: "Credly",
+    url: "https://credly.com/users/tnkrk121",
+    icon: <BadgeCheck aria-hidden="true" />,
   },
 ];
 
