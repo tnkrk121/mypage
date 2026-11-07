@@ -9,6 +9,7 @@ import DescriptionIcon from "@mui/icons-material/Description";
 import AlternateEmailIcon from "@mui/icons-material/AlternateEmail";
 import YouTubeIcon from "@mui/icons-material/YouTube";
 import ChatBubbleOutlineIcon from "@mui/icons-material/ChatBubbleOutline";
+import GitHubIcon from "@mui/icons-material/GitHub";
 import WorkspacePremiumIcon from "@mui/icons-material/WorkspacePremium";
 import networkBackground from "../assets/network-background.webp";
 
@@ -29,6 +30,7 @@ export const profiles: Profile[] = [
   { name: "Threads", url: "https://www.threads.net/@tnkrk.121", icon: <AlternateEmailIcon /> },
   { name: "YouTube", url: "https://www.youtube.com/@tnkrk121", icon: <YouTubeIcon /> },
   { name: "ChatGPT", url: "https://chatgpt.com/u/tnkrk121", icon: <ChatBubbleOutlineIcon /> },
+  { name: "GitHub", url: "https://github.com/tnkrk121", icon: <GitHubIcon /> },
   { name: "Credly", url: "https://credly.com/users/tnkrk121", icon: <WorkspacePremiumIcon /> },
 ];
 
